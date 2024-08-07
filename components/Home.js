@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react"; // Ajoutez useState
+import React, { useRef, useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import Header from "./Header";
 import Section1 from "./Section1";
@@ -10,7 +10,7 @@ function Home() {
   const acceuilRef = useRef(null);
   const shopRef = useRef(null);
   const router = useRouter();
-  const [isLoading, setIsLoading] = useState(true); // Ajoutez cet état
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (router.query.scrollTo === "shop" && shopRef.current) {
