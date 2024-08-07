@@ -3,7 +3,7 @@ import Panier from "../components/Panier";
 
 function panier() {
   return (
-    <main class=" flex flex-col bg-zinc-100 w-full h-lvh">
+    <main class=" flex flex-col bg-zinc-200 w-full h-lvh">
       <Header></Header>
       <Panier></Panier>
     </main>
