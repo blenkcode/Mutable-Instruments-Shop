@@ -45,10 +45,19 @@ function Section1({ scrollToWorks }) {
       </div>
 
       <div className="flex flex-col justify-center items-center  w-4/12 h-3/4 mr-10">
-        <img src="./cover 1.png" className={styles.img1} />
+        <img
+          src="https://res.cloudinary.com/dmijime4v/image/upload/v1725830008/monx43j4om8xweekykkq.png"
+          className={styles.img1}
+        />
 
-        <img src="./cover2.png" className={styles.img2}></img>
-        <img src="./cover3.png" className={styles.img3} />
+        <img
+          src="https://res.cloudinary.com/dmijime4v/image/upload/v1725830042/riwcc1qb6p56lkx6h42p.png"
+          className={styles.img2}
+        ></img>
+        <img
+          src="https://res.cloudinary.com/dmijime4v/image/upload/v1725830074/snmbtldmyrglebzfw6g4.png"
+          className={styles.img3}
+        />
       </div>
     </div>
   );
