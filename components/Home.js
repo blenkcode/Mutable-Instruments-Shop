@@ -55,20 +55,18 @@ function Home() {
   }
 
   return (
-    <div className="scrollbar-hide">
-      <main className="flex flex-col bg-zinc-100 ">
-        <Header
-          scrollToAcceuil={() => scrollToSection(acceuilRef)}
-          scrollToWorks={() => scrollToSection(shopRef)}
-        />
-        <Section1
-          scrollToWorks={() => scrollToSection(shopRef)}
-          ref={acceuilRef}
-        />
-        <Shop ref={shopRef} />
-        <Footer />
-      </main>
-    </div>
+    <main className="w-full flex flex-col bg-zinc-100  ">
+      <Header
+        scrollToAcceuil={() => scrollToSection(acceuilRef)}
+        scrollToWorks={() => scrollToSection(shopRef)}
+      />
+      <Section1
+        scrollToWorks={() => scrollToSection(shopRef)}
+        ref={acceuilRef}
+      />
+      <Shop ref={shopRef} />
+      <Footer />
+    </main>
   );
 }
 

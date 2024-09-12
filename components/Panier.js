@@ -18,26 +18,29 @@ function Panier() {
   };
   return (
     <div class="w-full h-full  flex flex-col items-center justify-center">
-      <div class="w-2/3 h-2/3  flex-col flex items- justify-center relative">
+      <div class="lg:w-2/3 h-2/3 lg-px-0 px-5 flex-col flex items- justify-center relative">
         <div class=" text-5xl"> Cart</div>
         <div class=" rounded-md  w-full h-full mt-10 overflow-y-scroll  bg-zinc-100">
           {cart.map((item, index) => (
-            <ul key={index} className="p-5">
+            <ul key={index} className="lg:p-5 p-2">
               <li className="flex items-center justify-around rounded-md bg-zinc-300 py-5">
                 <img
                   src={item.img}
                   className="w-auto max-h-28 h-auto ml-5 shadow-xl"
                   alt={item.name}
                 ></img>
-                <div className="text-2xl ">{item.name}</div>
-                <div>Price: {item.prix}$</div>
-                <div>Quantity: 1</div>
-                <div>See Product</div>
-                <FontAwesomeIcon
-                  icon={faTrash}
-                  onClick={() => handleRemoveFromCart(item)}
-                  class="cursor-pointer w-5 "
-                />
+                <div className="lg:text-2xl text-sm">{item.name}</div>
+                <div className="flex lg:flex-row  flex-col lg:text-xl text-xs">
+                  {" "}
+                  <div className="mr-5">Price: {item.prix}$</div>
+                  <div className="mr-5">Quantity: 1</div>
+                  <div className="mr-5">See Product</div>
+                  <FontAwesomeIcon
+                    icon={faTrash}
+                    onClick={() => handleRemoveFromCart(item)}
+                    className="cursor-pointer w-5 lg:mt-0 mt-5 "
+                  />
+                </div>
               </li>
             </ul>
           ))}

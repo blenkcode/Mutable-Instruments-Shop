@@ -28,16 +28,16 @@ function Products() {
     }, 5000);
   };
   return (
-    <div class="mt-48 flex w-full">
-      <div class="w-1/2 flex flex-col justify-center ">
+    <div class="lg:mt-48 mt-20 flex w-full lg:flex-row flex-col">
+      <div class="lg:w-1/2 flex flex-col justify-center ">
         <div class="w-full flex flex-col items-center justify-center">
           {" "}
-          <img src={imgp} class="w-3/5 rounded-md shadow-2xl"></img>
+          <img src={imgp} class="lg:w-3/5 rounded-md shadow-2xl"></img>
         </div>
       </div>
-      <div class="w-1/2 pr-36 mt-0 relative flex flex-col justify-start">
-        <div class="flex">
-          <h4 class="text-4xl mb-10 mr-5">{name}</h4>
+      <div class="lg:w-1/2 lg:pr-36 mt-0 px-5 lg:px-0 relative flex flex-col justify-start">
+        <div class="flex lg:flex-row flex-col justifitems-center">
+          <h4 class="text-4xl mb-10 lg:mt-0 mt-10 mr-5">{name}</h4>
           <h4 class="text-4xl mb-10">{fonction}</h4>
         </div>
         <h4 class=" text-2xl mb-5">Features</h4>
@@ -47,7 +47,7 @@ function Products() {
         <div>
           <h4 class=" text-2xl mb-5">Specifications</h4>
           <div>{spec}</div>
-          <div class="absolute bottom-0 ">
+          <div class="lg:absolute bottom-0 mb-10 lg:mb-0 ">
             <div class=" mb-7">Price: {prix}$</div>
             <div
               onClick={() => handleAddToCart(item)}

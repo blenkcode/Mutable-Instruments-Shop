@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <div class="bg-black w-full h-80 text-white flex ">
-      <div class="w-1/3 px-10 py-10">
+    <div class="bg-black w-full lg:h-80 h-fit text-white flex lg:flex-row flex-col">
+      <div class="lg:w-1/3 px-10 py-10">
         <img src="./logo.jpeg" class="w-24 mb-5 cursor-pointer"></img>
         <div class="mb-3">
           Disclamer : This website is only for fun and tribute, anything can't
@@ -10,7 +10,7 @@ function Footer() {
 
         <div>MUTABLE INSTRUMENTS. 2009 - 2022</div>
       </div>
-      <div class="w-1/5 px-10 py-10">
+      <div class="lg:w-1/5 px-10 py-10">
         <div class="text-xl mb-5">Compagny</div>
         <ul class="cursor-pointer">
           <li class="mb-3 ">About</li>
@@ -18,7 +18,7 @@ function Footer() {
           <li class="mb-3">BlaBlaBla</li>
         </ul>
       </div>
-      <div class="w-1/5 px-10 py-10">
+      <div class="lg:w-1/5 px-10 py-10">
         {" "}
         <div class="text-xl mb-5">Helpful Links</div>
         <ul class="cursor-pointer">
@@ -28,7 +28,7 @@ function Footer() {
           <li>GitHub</li>
         </ul>
       </div>
-      <div class="w-1/5 px-10 py-10">
+      <div class="lg:w-1/5 px-10 py-10">
         {" "}
         <div class="text-2xl mb-5">Legal</div>
         <ul class="cursor-pointer">
