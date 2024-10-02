@@ -206,7 +206,7 @@ const Shop = forwardRef((props, ref) => {
 
   return (
     <div class="flex justify-center items-center flex-col mt-28 mb-16 ">
-      <h4 ref={ref} class="text-4xl mb-10 flex items-end ">
+      <h4 ref={ref} class="lg:text-4xl text-lg mb-10 flex items-end ">
         {" "}
         <img src="./down-chevron.png" class="w-4 h-4 mr-5"></img>SHOP{" "}
         <img src="./down-chevron.png" class="w-4 h-4 ml-4"></img>

@@ -15,6 +15,10 @@ module.exports = {
         customRed: "rgb(220, 38, 38)", // Example RGB color
         customGreen: "rgb(34, 197, 94)", // Example RGB color
       },
+      fontFamily: {
+        Noehmi: ["Nohemi"],
+        Geist: ["Geist"],
+      },
     },
   },
   plugins: [],

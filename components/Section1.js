@@ -2,9 +2,9 @@ import styles from "../styles/Home.module.css";
 
 function Section1({ scrollToWorks }) {
   return (
-    <div className="flex lg:flex-row flex-col lg:mt-48 mt-32 justify-center items-center ">
+    <div className="flex lg:flex-row flex-col lg:mt-48 mt-24 justify-center items-center ">
       <div className="lg:w-6/12 w-full justify-center h-3/4 flex flex-col lg:pl-10 lg:px-0 px-5">
-        <h3 className="lg:text-7xl text-5xl mb-8 font-normal">
+        <h3 className="lg:text-7xl text-3xl lg:mb-8 font-normal">
           Unleash <span className={styles.youy}>y</span>
           <span className={styles.youro}>o</span>
           <span className={styles.youru}>u</span>
@@ -21,7 +21,7 @@ function Section1({ scrollToWorks }) {
           <span className={styles.tt}>t</span>
           <span className={styles.y}>y.</span>
         </h3>
-        <p className="py-10 text-2xl lg:w-4/6 w-full mb-0">
+        <p className="lg:py-10 pt-10 lg:pt-0 lg:text-lg text-md lg:w-4/6 w-full mb-0">
           Open source Eurorack modules designed to reach organics and unique
           soundscapes. <br />
           <br />
@@ -29,15 +29,15 @@ function Section1({ scrollToWorks }) {
           producers.
           <a
             href="https://pichenettes.github.io/mutable-instruments-documentation/"
-            className="text-xl cursor-pointer flex items-center my-8 underline"
+            className="lg:text-xl text-md cursor-pointer flex items-center my-8 underline"
           >
-            Learn more <img src="./more.png" className="mt-1 w-4 h-4 ml-3" />
+            Learn more <img src="./more.png" className="mt-1 w-4 h-4 ml-3 " />
           </a>
         </p>
 
         <div
           onClick={scrollToWorks}
-          className="cursor-pointer text-x border-solid border-2 border-black rounded-md w-fit px-4 py-2 flex items-center justify-center shadow-lg lg:mb-0 mb-20"
+          className="cursor-pointer text-x border-solid border-2 border-black rounded-md w-fit px-4 py-2 flex items-center justify-center shadow-lg lg:mb-0 mb-10 lg:mb-20"
         >
           BROWSE PRODUCTS
           <img src="./down-chevron.png" className="w-4 h-4 ml-3" />
